@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
+/* Variables principales */
+:root{
+    --rosaPrimario: #fc2c5e;
+    --rosaPrimarioHover: #FF3F6D;
+    --rosaPrimarioPress: #DF1C4B;
+    --oscuroPrimario: #1e1e26;
+    --oscuroSecundario: #313139;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e26;
+    display: flex;
+}
+
+/* Reglas para el tamaño de lso iconos. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Reglas para utilizarlo cuando su color es negro y el fondo es claro. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Reglas para utilizarlo cuando su color es blanco y el fondo es oscuro. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Definimos los estilos para el menú */
+/* Logo */
+.logo{
+    width: 33px;
+    height: 65px;
+    padding-top: 16px; ;
+}
+
+/* Contenedor del menú */
+.menu_content{
+    width: 90px;
+    height: 100%;
+    background-color: #313139;
+    text-align: center;
+    position: fixed;
+}
+
+.menu_content a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    margin: 10px 0px;
+    transition: all 0.3s ease;
+}
+.menu_content a:hover{
+    background-color: #1e1e26;
+}
+
+
+/* Personalización del contenido principal */
+
+/* Inicio de personalización del Formulario */
+.contenido_principal{
+    width: 700px;
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+
+/* .primera_columna h2, p, form{
+    margin-bottom: 20px;
+    margin-left: 200px;
+} */
+
+#cvuelo{
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    background-color: var(--oscuroSecundario);
+}
+
+#vfvuelo{
+    background-color: #fc2c5e;
+    height: 45px;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.mostrarDatosVuelo{
+    width: 400px;
+    height: 300px;
+    background-color: var(--oscuroSecundario);
+    margin: 20px 0px;
+    margin-left: 200px;
+    border-radius: 7px;
+}
+/* Fin de personalización del Formulario */
+
+/* Inicio de personalización de la segunda columna */
+
+.segunda_columna{
+    margin: 0px 20px;
+}
+
+.com_ranking{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+#textComent{
+    border: none;
+    outline: none;
+    background-color: #313139;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+#comentar{
+    background-color: var(--rosaPrimario);
+    height: 45px;
+    width: 400px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#canvuelo{
+    background-color: var(--rosaPrimario);
+    height: 45px;
+    width: 195px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#movuelo{
+    background-color: var(--rosaPrimario);
+    height: 45px;
+    width: 195px;
+    margin-left: 5px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* Fin de personalización de la segunda columna */
+
+/* Personalización del footer */
+.separador{
+    height: 4px;
+    width: 4px;
+    background-color: white;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #1e1e26;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer a{
+    text-decoration: none;
+}

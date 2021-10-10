@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Usuario</title>
+    <link rel="stylesheet" href="/env/static/css/estilosPlataformaUsuario.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="menu_content">
+        <img class="logo" src="/env/static/Images/logos/LogosinFondoSecundario.svg" alt="">
+        <a href=""><span class="material-icons md-24">airplane_ticket</span></a>
+        <a href=""><span class="material-icons md-24">flight</span></a>
+        <a href=""><span class="material-icons md-24">settings</span></a>
+        <a href=""><span class="material-icons md-24">logout</span></a>
+    </div>
+    <div class="contenido">
+        <div class="contenido_principal">
+            <div class="primera_columna">
+                <h2>Puede Verificar Sus Vuelos</h2>
+                <p>Ingrese el código del vuelo que reservó para poder ver todos sus datos</p>
+                <form action="">
+                    <input type="text" id="cvuelo" name="codigovuelo" placeholder="Código del vuelo"><br>
+                    <button type="button" id="vfvuelo">Verificar</button>
+                </form>
+                <div class="mostrarDatosVuelo"> 
+                </div>
+            </div>
+            <div class="segunda_columna">
+                <div class="com_ranking">
+                    <h2>Comentar</h2>
+                    <input type="range" min="0" max="5" name="star" id="ranking">
+                </div>
+                <textarea name="comenatario" id="textComent" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
+                <button type="button" id="comentar" >Comentar</button>
+                <button type="button" id="canvuelo" >Cancelar vuelo</button>
+                <button type="button" id="movuelo" >Modificar reserva</button>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="">Equipo de desarrollo</a>
+            <div class="separador"></div>
+            <a href="">Políticas de privacidad</a>
+        </div>
+    </div>
+</body>
+</html>
